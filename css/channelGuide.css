@@ -1,0 +1,10 @@
+div.time{
+	font-weight: bold;
+}
+
+/* main content*/
+
+section header, header p.channelHeder{
+	font-weight: bold;
+	font-size: 1em;
+}

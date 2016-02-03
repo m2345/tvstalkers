@@ -1,0 +1,217 @@
+/* Need to check compatibility with other browsers 
+ * 	It works in Firefox and chrome 
+ * HInt for Opera replace webkit with o*/
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+/* For threads and posts page*/
+	ul.externLinks{
+		list-style: none;
+	}
+	
+	ul.externLinks li{
+		padding-bottom: 5px;
+	}
+	
+	ul.externLinks{
+		border-bottom: 2px solid black;
+	}
+	
+	div#nav{
+		overflow: hidden;
+	}
+	
+header p.newsHeader{
+	text-align:center;
+	font-size: 2em;
+	font-weight: bold;
+}
+
+header p.channelHeader{
+	text-align:center;
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+aside.sideLeft div.tvGuide, aside.sideLeft div#showLinks
+, aside.sideLeft div.inTheNews aside{
+	padding-bottom: 5px;
+	border-bottom: 2px solid black;
+}
+
+aside.sideLeft div.showLinks{
+	padding-bottom: 10px;
+}
+
+#wrapper, #new_div{
+	height:1000px;
+	/*overflow: auto;*/
+}
+/* Some browsers don't recongnize html5 tags 
+ * 	and they see them as inline elements so make
+ * 	sure they are seen as blocks*/
+
+header, section, article, footer, aside, nav, hgroup{
+	display:block;
+}
+
+#indexNavBox{
+width: 90%;
+margin-left: 5%;
+margin-right: 5%;
+/*
+	margin-left: 50px;
+	margin-right: 50px;*/
+}
+
+#trendingNow{
+	margin-right: 50px;
+}
+
+div#newThread{
+	display:none;
+}
+
+div.title{
+	text-align:center;
+}
+
+body{
+	width:100%; /*for flexible box model*/
+}
+
+#new_div{
+	/*display:-webkit-box;
+	display:-moz-box;*/
+}
+
+.side_news{
+	margin:0 50px;
+	width: 15%; 
+	/*max-width: 200px;*/
+	padding: 10px;
+	background: #efefef;
+	height: auto
+}
+.sideLeft{
+float:left;
+position: relative;
+
+}
+
+#main_section{
+	margin: 0;
+	/*padding: 10px;*/
+	float: left;
+	width: 50%;
+	position:relative;
+}
+
+/* hides element if screen size less than 1024px */
+@media screen and (max-width : 1024px){
+	#trendingNow {
+        display: none !important;
+    }
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+	.sideLeft{
+		display:none !important;
+	}	
+	
+	#main_section{
+		width:100% !important;
+		float:clear;
+		margin: 2% !important;
+		
+	}
+	
+	*{
+		width:98%;
+	}
+	
+	/* shrink posts width*/
+}
+
+#result_times{
+	position:relative;
+	z-index:10;
+}
+
+#main_section.thread{
+	margin-left: 25px;
+	margin:0px !important;
+	padding: 0px !important;
+}
+#trendingNow{
+	position: absolute;
+	right: 20px;
+}
+
+#footer{
+	text-align: center;
+	padding: 20px;
+	border-top: 5px solid black;
+	margin-bottom:0;
+	position: relative;
+	margin-left: 50px;
+}
+
+/* Main Page side navigation */
+
+div#channelLinks ul, div.showLinks ul{
+	list-style:none;
+}
+
+.sideNav li{
+	list-style: none;
+    text-align: center;
+    background-color: #5F6975;/*#000000;*/
+    margin-bottom: 10px;
+    width: 150px;
+    line-height: 40px;
+}
+
+.sideNav li a{
+    text-decoration: none;
+    color: #FFFFFF;
+    display: block;
+}
+
+.sideNav li a:hover {
+    text-decoration: none;
+    color: #000000;
+    background-color: #33B5E5;
+}
+
+/* Buttons on post and thread page*/
+	button.buttonStyle, input.buttonStyle {
+			background-color: #5F6975;
+			-moz-border-radius: 5px;
+			-webkit-border-radius: 5px;
+			-o-border-radius: 5px;
+			border-radius:6px;
+			color: #fff;
+			font-family: 'Oswald';
+			font-size: 1em;
+			text-decoration: none;
+			cursor: pointer;
+			border:none;
+			padding:2.5px;
+		}
+
+	button.buttonStyle:hover{
+		border: none;
+		background:#ccc;
+		box-shadow: 0px 0px 1px #777;
+	}
+
+
+/*articles */
+
+footer.date{
+	text-align:right;
+}

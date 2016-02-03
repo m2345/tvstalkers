@@ -1,0 +1,52 @@
+ul.threads div{
+	float: left;
+}
+
+ul.posts div.username, ul.posts div.dateTime{
+	float: left;
+}
+
+ul.threads div.count{
+	width: auto;
+}
+
+ul.threads div.link{
+	width: 300px;
+	height: auto;
+	word-wrap: word-break;
+} 
+
+ul.posts div.message{
+	width: 70%;
+	margin-left: 2%;
+	word-wrap: word-break;
+	text-align:center;
+} 
+
+ul.threads li{
+	list-style:none;
+	border-bottom: gray dashed 2px;
+	height: 40px;
+	padding: 5px;
+	margin-bottom: 5px;
+}
+
+ul.posts li{
+	list-style:none;
+	border-bottom: gray dashed 2px;
+	padding: 5px;
+	margin-bottom: 5px;
+	width: auto;
+	height: 200px;
+}
+
+
+ul.posts div.username, ul.posts div.dateTime{
+	width:100%;
+	word-wrap: break-word;
+	font-size: .75em;
+}
+
+ul.threads div a, ul.posts div a{
+	text-decoration:none;
+}

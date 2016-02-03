@@ -1,0 +1,2 @@
+To get this code to work create a config.php file and put it in the root director
+create a mysqli object called $connect.  

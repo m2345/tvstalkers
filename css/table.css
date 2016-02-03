@@ -1,0 +1,19 @@
+
+table:not(#guide){
+	border-collapse: collapse;
+}
+
+table:not(#guide) td{
+	padding: 10px;
+	border: 1px solid black;
+}
+table td a{
+	text-decoration: none;
+}
+table:not(#guide) th{
+	background-color: green;
+	color: white;
+	border: 1px solid black;
+	font-size: 1.2em;
+	padding: 2px;
+}

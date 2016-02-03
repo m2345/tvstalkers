@@ -1,0 +1,56 @@
+<html>
+	<title>Thread</title>
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" href="../main_flex.css"/>
+	<link rel="stylesheet" href="../css/channelGuide.css"/>
+	<script src="../jquery1.11.js"></script>
+	<script src="../json2.js"></script>
+	<script src="./js2.js"></script>
+	<link rel="stylesheet" href="../css/news.css"/>
+	<link rel="stylesheet" href="../css/table.css"/>
+	<div id="indexNavBox">
+<? 
+	include('../nav.php');
+	include('../channel.php');
+	define(PAGE, 5);
+	define(CHANNEL, 1);
+	?>
+</div>
+<?
+echo "</br>";
+?>
+	
+</head>
+<body>
+	<div id="wrapper">
+<div id="new_div"> <!--part of felxible box model-->
+	<aside id="main_side_left" class="sideLeft side_news"><!-- id was side_news-->
+		<div>Tv show list and links</div>
+		<div class="showLinks"><? getShowLinks(); ?></div>
+		<div id="tvGuide">
+		Loading Guide...
+		</div>
+	</aside>
+	<section id="main_section"><!-- meet of the website-->
+		<article class="trendingThreads trending threads topics syfy article">
+			<header><h3>Popular on the Syfy fourm</h3></header>
+			<div class="div trendingThreads trending threads topics syfy">
+			<? loadTrendingThreads();?>
+			</div>
+		</article>
+		<? getNews();?>
+		
+	</section>
+	
+	<aside id="trendingNow" class="sideRight side_news twitter feed trendingNow general"><!-- id was side_news-->
+		<h3>Syfy feed</h3>
+		            <a class="twitter-timeline"  href="https://twitter.com/Syfy" data-widget-id="570625339961782272">Tweets by @Syfy</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+          
+	</aside>
+	</div> <!-- end new div-->
+	</div>
+	<footer id="footer">Copyright 2015</footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,91 @@
+	div.cell{
+		border: 1px solid black;
+	}	
+	
+#tvGuid{
+	width: 315px;
+		overflow:scroll;
+		width:315px;
+		border: 2px solid black;
+	}
+
+	div.cell{
+		/*overflow:hidden;*/
+		height:22px;
+		font-size: 1em;
+	}
+	
+	div.channelName, div.timeHeader{
+		text-align:center;
+		padding:2px;
+		background-color: grey !important;
+	}
+	
+	.row{
+		width:300px;
+		height: 24px;
+		background-color: #EFEFEF;
+		white-space:nowrap !important;
+		height:auto;
+		/*overflow:hidden;///*/
+		text-align: left;
+	}
+	
+	.kid{
+		height: 20px;
+		background-color: #5F6975;
+		display:inline-block;
+	}
+	
+	div > div.row{
+		float:right;
+	}
+	
+	div.channelName{
+		width: 55px;
+		
+	}
+
+	div.TBD{
+		width: 100%;
+	}
+	
+	div._08_00{
+		left: 57px;
+		position:relative !important;
+	}
+	
+	div._08_30{
+		left: 117.75px;
+		position:relative !important;
+	}
+	
+	div._09_00{
+		left: 178.5px;
+		position:relative !important;
+	}
+	
+	div._09_30{
+		left: 236.25px;
+		position:relative !important;
+	}
+	
+	div._10_00{
+		left: 297px;
+		position:relative !important;
+	}
+	
+	div._10_30{
+		left: 357.75px;
+		position:relative !important;
+	}
+	
+	div._11_00{
+		left: 418.5px;
+		position:relative !important;
+	}
+	
+	div._11_30{
+		left:479.25px;
+		position:relative !important;
+	}
